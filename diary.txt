@@ -1,1 +1,1 @@
-Primer dia: Hoy hemos empezado a utilizar Git en clase.
+Git me esta rayando, pero es util
