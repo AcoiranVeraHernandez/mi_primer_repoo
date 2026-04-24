@@ -7,7 +7,7 @@ public class numerosprimosAcoiran {
       pedirDatosSegundo();
       comprobarmayor();
     }
-
+// Pedimos el primer dato al usuario y luego lo devolvemos al main para seguir usándolo
     public static int pedirDatosPrimero() {
         int PrimerNumero= 0;
         Scanner t = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class numerosprimosAcoiran {
         PrimerNumero = t.nextInt();
         return PrimerNumero;
     }
-
+// Pedimos el segundo dato al usuario y luego lo devolvemos al main para seguir usándolo
     public static int pedirDatosSegundo(){
         int SegundoNumero = 0;
         Scanner t = new Scanner(System.in);
@@ -23,7 +23,7 @@ public class numerosprimosAcoiran {
         SegundoNumero = t.nextInt();
         return SegundoNumero;
     }
-
+// Comprobamos que número primo es mayor
     private static void comprobarmayor() {
         Scanner t = new Scanner(System.in);
         int Cont1 =pedirDatosPrimero(), Cont2 =pedirDatosSegundo();
