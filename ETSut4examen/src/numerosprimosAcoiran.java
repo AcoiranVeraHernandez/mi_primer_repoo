@@ -3,20 +3,38 @@ import java.util.Scanner;
 
 public class numerosprimosAcoiran {
     static void main(String[] args) {
+      pedirDatosPrimero();
+      pedirDatosSegundo();
+      comprobarmayor();
+    }
+
+    public static int pedirDatosPrimero() {
+        int PrimerNumero= 0;
         Scanner t = new Scanner(System.in);
-        int PrimerNumero, SegundoNumero;
-        boolean valirdarnum;
         ((PrintStream) null).print("Introduzca primer numero: ");
         PrimerNumero = t.nextInt();
+        return PrimerNumero;
+    }
+
+    public static int pedirDatosSegundo(){
+        int SegundoNumero = 0;
+        Scanner t = new Scanner(System.in);
         ((PrintStream) null).print("Introduzca segundo numero: ");
         SegundoNumero = t.nextInt();
-        int Cont1, Cont2;
-        if (PrimerNumero > SegundoNumero) {
-            Cont1 = PrimerNumero;
-            Cont2 = SegundoNumero;
+        return SegundoNumero;
+    }
+
+    private static void comprobarmayor() {
+        Scanner t = new Scanner(System.in);
+        int Cont1 =pedirDatosPrimero(), Cont2 =pedirDatosSegundo();
+        int alm1 =0, alm2 =0;
+        boolean valirdarnum = true;
+        if (Cont1 > Cont2) {
+            alm1 = Cont1;
+            alm2 = Cont2;
         } else {
-            Cont1 = SegundoNumero;
-            Cont2 = PrimerNumero;
+            alm1 = Cont2;
+            alm2 = Cont2;
         }
         for (int i = Cont2; i <= Cont1; i++) {
             valirdarnum = true;
@@ -31,4 +49,7 @@ public class numerosprimosAcoiran {
             }
         }
     }
+
+
+
 }
