@@ -23,7 +23,7 @@ public class numerosprimosAcoiran {
         SegundoNumero = t.nextInt();
         return SegundoNumero;
     }
-// Comprobamos que número primo es mayor
+// Comprobamos que número primo ess mayor
     private static void comprobarmayor() {
         Scanner t = new Scanner(System.in);
         int Cont1 =pedirDatosPrimero(), Cont2 =pedirDatosSegundo();
